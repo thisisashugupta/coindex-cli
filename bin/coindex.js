@@ -1,10 +1,11 @@
 #!/usr/bin/env node
-const program = require("commander");
-const pkg = require("../package.json");
+import { program } from "commander";
+import pkg from "../package.json" assert { type: "json" };
 
 program
   .version(pkg.version)
-  .command("key", "Manage API Key -- https://nomics.com")
+  .command("key", "Manage API Key -- https://www.coinapi.io/")
+  .command("check", "Check Coin Price Info")
   .parse(process.argv);
 
 // console.log(process.argv);

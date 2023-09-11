@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-const program = require("commander");
-const key = require("../commands/key.js");
+import { program } from "commander";
+import key from "../commands/key.js";
 
 program
   .command("set")
-  .description("Set API Key -- Get your API key at https://nomics.com")
+  .description("Set API Key -- Get your API key at https://www.coinapi.io/")
   .action(key.set);
 
 program.command("show").description("show API Key").action(key.show);

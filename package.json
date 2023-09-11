@@ -2,7 +2,8 @@
   "name": "coindex-cli",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
+  "main": "./bin/coindex.js",
   "bin": {
     "coindex": "./bin/coindex.js"
   },
